@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Gender Cube</title>
+
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id = 'menudiv'>
+            
+            <div>
+                <h1>Concept: 50</h1>
+                <input class="sliders" id="slider1" type="range" min="0" max="100" value="50">
+                <button id="button1">Focus On Axis</button>
+            </div>
+            <div>
+                <h2>Expression: 50</h2>
+                <input class="sliders" id="slider2" type="range" min="0" max="100" value="50">
+                <button id="button2">Focus On Axis</button>
+            </div>
+            <div>
+                <h3>Intensity: 50</h3>
+                <input class="sliders" id="slider3" type="range" min="0" max="100" value="50">
+                <button onclick="button1Action()" id="button3">Focus On Axis</button>
+            </div>
+            <div>
+                <!-- Checkbox labeled Spin that is either true or false -->
+                <h4>Spin</h4>
+                <input id="checkbox" type="checkbox" checked>
+            </div>
+        </div>
+
+    </main>
+
+    <section id="helpTextBox">
+        
+    </section>
+    <canvas class="webgl"></canvas>
+    
+    <source src="script.js"></source>
+</body>
+</html>
