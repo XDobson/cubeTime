@@ -1,10 +1,6 @@
 import './style.css'
 import * as THREE from 'https://unpkg.com/three@0.139.2/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.124.0/examples/jsm/controls/OrbitControls.js'
-import * as dat from 'dat.gui'
-
-// Debug
-// const gui = new dat.GUI()
 
 //vars
 window.buttonisActive = false
