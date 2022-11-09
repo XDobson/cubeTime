@@ -28,6 +28,17 @@ document.getElementById("slider3").oninput = function () {
     document.getElementById("slider3").style.background = "hsl(0, 100%," + x / 2 + "%)";
 }
 
+//toggles menu using "hide" button, using an event listenerthat listens for mouse down
+document.getElementById("hide").addEventListener("mousedown", toggleMain);
+document.getElementById("main").style.visibility = "visible";
+function toggleMain() {
+    if (document.getElementById("main").style.visibility == "visible") {
+        document.getElementById("main").style.visibility = "hidden";
+    } else {
+        document.getElementById("main").style.visibility = "visible";
+    }
+}
+
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
